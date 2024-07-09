@@ -1,5 +1,3 @@
-Sure, here's a draft for your `README.md` file for the Brigade project:
-
 ---
 
 # Brigade
