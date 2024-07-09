@@ -1,5 +1,6 @@
 ---
 
+
 # Brigade
 
 **Brigade** is the first platform to buy and sell from multiple wallets simultaneously on Pump.fun and Raydium, designed specifically for the Solana ecosystem.
