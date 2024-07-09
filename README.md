@@ -1,4 +1,4 @@
-Brigade README
+Brigade Multi-Wallet Crypto Trading Platform
 
 ---
 
@@ -10,7 +10,6 @@ Brigade README
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Installation](#installation)
 - [Usage](#usage)
 
 
