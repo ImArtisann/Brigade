@@ -1,29 +1,11 @@
-Brigade Multi-Wallet Crypto Trading Platform
-
+---
+description: >-
+  Tired of spammy trading bots? Brigade has one menu and wont keep sending you
+  multiple messages after every option clicked!
 ---
 
-# Brigade
+# 🤖 What is Brigade?
 
-**Brigade** is the first platform to buy and sell from multiple wallets simultaneously on Pump.fun and Raydium, designed specifically for the Solana ecosystem.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Usage](#usage)
+Brigade is the ultimate High-Speed, Multi-Wallet Trading Bot on the Solana network for Pump.fun and Raydium SPL Tokens. Created for the user, by users. Manage up to 25 wallets in a single click for funding them, Trading on either supported platforms and even sending your gains back to your main wallet!\
 
 
-## Introduction
-
-Brigade streamlines the process of managing multiple wallets, enabling users to execute buy and sell operations simultaneously on Pump.fun and Raydium. This enhances trading efficiency and maximizes opportunities in the Solana network.
-
-## Features
-
-- **Multi-Wallet Support:** Manage and trade from multiple wallets concurrently.
-- **Integration with Pump.fun and Raydium:** Seamless trading on two of the most popular platforms for Solana.
-- **User-Friendly Interface:** Intuitive design for easy navigation and operation.
-- **Secure Transactions:** Enhanced security measures to protect your assets and data.
-
-
-
----
