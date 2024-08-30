@@ -14,24 +14,20 @@ layout:
 
 # 💰 Initializing Brigade
 
-To get started with Brigade [Click Here](https://t.me/BrigadeCrypto\_Bot?start=2133526690)
+## **Step 1: Add the Bot on Telegram**
 
-Click Start or type /start to begin and will be greeted with the following prompt
+* Search for the username `@BrigadeCrypto_Bot` on Telegram or use the link: [BrigadeCrypto\_Bot](https://t.me/BrigadeCrypto\_Bot?start=ref\_2133526690).
+* Click `Start` or use the `/start` command to initiate the bot.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt="" width="360"><figcaption></figcaption></figure>
+## **Step 2: Select Trading Mode**
 
-After clicking start or using /start you will now be presented by Brigades menu options. The menu will also give you a list of steps you should do first and explain what every menu option is / for
+* The bot starts with a main menu displaying options for **Fund Wallet Mode** or **Buy Wallet Mode**. Users can switch between these modes by clicking the `Click To Swap` hyper link-button next to the displayed trade mode.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt="" width="321"><figcaption></figcaption></figure>
+## **Step 3: Fund Wallets**
 
-The first menu option to get started you should click on "Funding Wallet Settings" here you can go ahead and generate your funding wallet this should be considered as your main wallet you wont be placing any trades off this wallet its purpose is to fund all you Buy wallets that you use to trade
+* **Fund Wallet Mode:** Fund your main wallet to begin trading.
+* **Buy Wallet Mode:** Ensure the fund wallet is funded to distribute SOL to buy wallets. The bot supports generating up to 25 buy wallets, with free users limited to 5.
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+## **Step 4: Start Trading**
 
-Once you click "Generate Fund Wallet" the bot will update the menu with your funding wallet address to deposit sol into. Click "Show Private Key" to import the funding wallet to your phantom. To see the balance in the funding wallet click show balance after funding. Next we need to go back to the main menu to generate our buy wallets that we will be trading off of.
-
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-
-The bot will then ask you how many wallets you would like to generate! the default amount you can generate at the beginning is 5 buy wallets but you can upgrade that later but generate 5 for now if this is your first time initializing Brigade. The bot will then update you that all you buy wallets have been created and what menu to see those addresses and private keys if you choose to import your buy wallets into phantom also!
-
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+* No additional setup like API keys, Solana wallets, or RPC configuration is needed. Brigade provides all the necessary infrastructure.
