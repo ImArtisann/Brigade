@@ -8,7 +8,9 @@
 ## QUICK START GUIDE
 
 * [💰 Initializing Brigade](quick-start-guide/initializing-brigade.md)
-* [📖 Main Menu](quick-start-guide/main-menu.md)
+* [📖 Main Menu](quick-start-guide/main-menu/README.md)
+  * [Trade Mode Selector](quick-start-guide/main-menu/trade-mode-selector.md)
+  * [Pasting Contract Setting](quick-start-guide/main-menu/pasting-contract-setting.md)
 * [💸 Transaction Menu](quick-start-guide/transaction-menu.md)
 * [©️ Copy Trade Menu](quick-start-guide/copy-trade-menu.md)
 * [📪 Token History Menu](quick-start-guide/token-history-menu.md)
