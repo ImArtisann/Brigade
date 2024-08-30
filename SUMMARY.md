@@ -17,6 +17,8 @@
 * [🖥️ Buy / Sell Settings Menu](quick-start-guide/buy-sell-settings-menu/README.md)
   * [🖥️ Auto Buy / Auto Sell Settings](quick-start-guide/buy-sell-settings-menu/auto-buy-auto-sell-settings.md)
 * [🤑 Referrals Menu](quick-start-guide/referrals-menu.md)
+* [🖱️ Command Reference](quick-start-guide/command-reference.md)
+* [📑 Configuration](quick-start-guide/configuration.md)
 * [🔐 Security and Privacy](quick-start-guide/security-and-privacy.md)
 * [🆘 Support](quick-start-guide/support.md)
 
