@@ -12,7 +12,7 @@
   * [Trade Mode Selector](quick-start-guide/main-menu/trade-mode-selector.md)
   * [Pasting Contract Setting](quick-start-guide/main-menu/pasting-contract-setting.md)
 * [💸 Transaction Menu](quick-start-guide/transaction-menu.md)
-* [©️ Copy Trade Menu](quick-start-guide/copy-trade-menu.md)
+* [©️ ©️ Copy Trade Menu](quick-start-guide/copy-trade-menu.md)
 * [📪 Token History Menu](quick-start-guide/token-history-menu.md)
 * [🔫 Sniper Menu](quick-start-guide/sniper-menu.md)
 * [💳 Wallet Settings Menu](quick-start-guide/wallet-settings-menu.md)
