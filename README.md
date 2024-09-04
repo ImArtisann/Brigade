@@ -5,7 +5,6 @@ description: >-
 ---
 
 # 🤖 What is Brigade?
-<img align="right" width="100" height="100" src="https://picsum.photos/100/100">
 
 Brigade is a Telegram-based trading bot designed for trading on Solana platforms, specifically Pump.fun and Raydium. Brigade offers two primary trading modes:
 
@@ -20,8 +19,4 @@ Brigade is a Telegram-based trading bot designed for trading on Solana platforms
 * **Dedicated RPC Nodes:** Provided by Brigade for fast and reliable transactions.
 * **1% Transaction Fee:** Applied to all trades conducted through the bot.
 
-
-
-\
-
-
+\\
