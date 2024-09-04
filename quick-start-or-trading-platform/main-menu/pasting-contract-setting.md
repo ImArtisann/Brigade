@@ -1,11 +1,11 @@
 ---
-description: Change what pasting contract into the bot does
 icon: arrow-pointer
+description: Change what pasting contract into the bot does
 ---
 
 # Pasting Contract Setting
 
-In the main menu there's a hyperlink text "Click To Swap" right next to text that displays Pasting Contract: \[Mode]
+<table data-header-hidden data-full-width="true"><thead><tr><th width="727"></th><th></th></tr></thead><tbody><tr><td>In the main menu there's a hyperlink text "Click To Swap" right next to text that displays Pasting Contract: [Mode]<br><br><br><br><br><br><br><br><br></td><td><img src="../../.gitbook/assets/Untitled-1.png" alt=""></td></tr></tbody></table>
 
 ### Auto Buy Mode
 

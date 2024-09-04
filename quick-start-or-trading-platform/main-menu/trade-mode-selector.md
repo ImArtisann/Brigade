@@ -1,11 +1,11 @@
 ---
-description: Switch between trading out of the buy wallets or the fund wallet
 icon: arrow-pointer
+description: Switch between trading out of the buy wallets or the fund wallet
 ---
 
 # Trade Mode Selector
 
-In the main menu there's a hyper link button labeled as "click to swap" next to Trade Mode: \[Current mode]&#x20;
+<table data-header-hidden data-full-width="true"><thead><tr><th width="727"></th><th></th></tr></thead><tbody><tr><td><p>In the main menu there's a hyper link button labeled as "click to swap" next to Trade Mode: [Current mode] <br><br><br></p><p></p><p></p><p></p><p></p><p><br><br></p></td><td><img src="../../.gitbook/assets/Untitled design(3).png" alt=""></td></tr></tbody></table>
 
 ### Fund Wallet
 
