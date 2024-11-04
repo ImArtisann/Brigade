@@ -2,8 +2,42 @@
 description: Buy / Sell Menu Button
 ---
 
-# 💸 Transaction Menu
+# 💸 Trading Menu
 
-* **Contract Address Input**: Enter the token’s contract address to access trading options.
+The **Trading Menu** in Brigade allows users to quickly execute buy and sell transactions for a selected token. It provides customization options for buy/sell amounts, transaction priority, slippage tolerance, and wallet selection when in Multi-Wallet Mode.
 
-<table data-header-hidden data-full-width="true"><thead><tr><th width="200"></th><th width="800" align="center"></th></tr></thead><tbody><tr><td><h2><strong>Fund Wallet Mode:</strong></h2></td><td align="center"></td></tr><tr><td><p><strong>Buy Options</strong>:</p><p><strong>Preset SOL Amounts</strong>: Choose from preset options (e.g., 0.5 SOL, 1 SOL).</p><p><strong>Custom Amount</strong>: Set a specific amount of SOL for purchasing.</p><p><strong>Random Amount</strong>: The bot can automatically select a random buy amount within a specified range (e.g., 0.1 to 0.5 SOL).</p><p><strong>Submit Buys</strong>: Directly execute trades from the fund wallet without selecting multiple wallets.</p></td><td align="center"><p></p><p><img src="../.gitbook/assets/singlebuy (1).png" alt="" data-size="original"></p></td></tr><tr><td><p><strong>Sell Options</strong>:</p><p><strong>Preset Sell Percentages</strong>: Choose from preset percentages of your token balance (e.g., 2%, 5%, 10%, 25%, 50%, 75%, 100%).</p><p><strong>Custom Token Amount</strong>: Enter a specific number of tokens to sell.</p><p><strong>Submit Sells</strong>: Directly execute trades from the fund wallet without selecting multiple wallets.</p></td><td align="center"><img src="../.gitbook/assets/singlesellpng.png" alt="" data-size="original"></td></tr><tr><td><h2><strong>Buy Wallet Mode:</strong></h2></td><td align="center"></td></tr><tr><td><p><strong>Buy Options</strong>:</p><p><strong>Preset SOL Amounts</strong>: Choose from preset options (e.g., 0.5 SOL, 1 SOL).</p><p><strong>Custom Amount</strong>: Set a specific amount of SOL for purchasing.</p><p><strong>Random Amount</strong>: The bot can automatically select a random buy amount within a specified range (e.g., 0.1 to 0.5 SOL).</p><p><strong>Submit Buys</strong>: Directly execute trades from the fund wallet without selecting multiple wallets.</p><p><strong>Submit Buys</strong>: Executes the trade across all selected wallets simultaneously. Brigade’s custom methods ensure the transaction speed remains consistent across multi wallets vs submitting a transaction on one wallet.</p></td><td align="center"><img src="../.gitbook/assets/image (28).png" alt=""></td></tr><tr><td><p><strong>Sell Options</strong>:</p><p><strong>Preset Sell Percentages</strong>: As with Fund Wallet Mode, choose from preset sell percentages.</p><p><strong>Custom Token Amount</strong>: Enter the number of tokens to sell.</p><p><strong>Quick Dump</strong>: This special option allows users to consolidate all SPL tokens from all buy wallets that have a SPL balance into a single wallet and then execute a sell order. This feature is useful for quickly exiting trades while minimizing slippage.</p><p><strong>Submit Sells</strong>: Executes the trade across all selected wallets simultaneously. Brigade’s custom methods ensure the transaction speed remains consistent across multi wallets vs submitting a transaction on one wallet.</p></td><td align="center"><img src="../.gitbook/assets/multisell.png" alt=""></td></tr><tr><td><p><strong>Transaction Status Updates</strong>: </p><p>After submitting a trade, the bot will update with transaction IDs and statuses (e.g., confirmed, failed, or no balance). Users can refresh to update their wallet balances and unrealized PNL to be shown in the transaction menu.</p></td><td align="center"><img src="../.gitbook/assets/transaction.png" alt="" data-size="original"></td></tr></tbody></table>
+#### Overview of the Trading Menu
+
+1. **Token Information**
+   * **Wallet Address**: Displays the active wallet address in use.
+   * **Balance**: Shows the current SOL balance in **Multi Wallet** mode (if applicable).
+   * **Token Data**: Displays the token symbol (e.g., `$SKY`) and **Market Cap** in USD (e.g., `MCAP: $7,525.68 USD`).
+   * **Platform**: Shows the platform (e.g., `Pump.fun`) and any relevant token information or market status.
+2. **Trading Options**
+   * **Buy Menu**: Switches to **Buy Options** for executing buy orders.
+   * **Sell Menu**: Switches to **Sell Options** for executing sell orders.
+
+#### Buy Options (Buy Menu)
+
+When in the **Buy Menu**, users have access to several configurable options for executing buy orders:
+
+* **Quick Buy Options**: Provides three preset SOL amounts for quick buys, based on the nearest values set in the **Main** tab of the **Settings Menu**. For example, if the user sets `1 SOL`, `3 SOL`, and `5 SOL` in Settings, these values will appear here as options for quick selection.
+  * **Auto-Update**: If the user changes a quick buy amount here, it will automatically update to the closest available values from their settings.
+* **Custom Buy Amount**: Tap on the **Custom** icon (🖊) to enter a specific amount of SOL for a custom buy order.
+* **Random Buy**: Tap the **Random** icon (🖊) to specify a random SOL range for buys. The bot will pick a random value within this range for each transaction, creating a more human-like trading pattern.
+* **Slippage (Slip)**: Shows the current slippage tolerance for buy transactions (e.g., `Slip: 17`). Users can adjust this to ensure trades execute only within the specified tolerance range.
+* **Priority Settings**: Set the transaction priority (Normal, Turbo, Lightspeed) for faster or slower execution based on network conditions and fee preferences.
+* **Send Buys**: Executes the buy order with the selected parameters.
+* **Select Wallets** (Only in Multi-Wallet Mode): Allows users to select specific buy wallets for the transaction. This button will only appear when in **Multi-Wallet Mode**. Users can choose individual wallets or use the **Select All** option for bulk selection.
+
+#### Sell Options (Sell Menu)
+
+When in the **Sell Menu**, users can access the following options for executing sell orders:
+
+* **Quick Sell Options**: Provides three preset sell percentages based on the nearest values configured in the **Main** tab of the **Settings Menu** (e.g., `50%`, `75%`, `100%`).
+  * **Auto-Update**: If the user changes a quick sell percentage here, it will automatically update the options to the nearest values set in the **Settings Menu**.
+* **Custom Sell Percentage**: Tap the **Custom** icon (🖊) to enter a specific percentage of tokens to sell.
+* **Slippage (Slip)**: Displays the current slippage tolerance for sell transactions (e.g., `Slip: 30`). Users can adjust this to ensure trades execute only within the specified tolerance range.
+* **Priority Settings**: Set the transaction priority (Normal, Turbo, Lightspeed) to control the execution speed and fee based on network conditions.
+* **Send Sells**: Executes the sell order with the selected parameters.
+* **Quick Dump** (Only in Multi-Wallet Mode): This option consolidates all tokens from the selected buy wallets into a single wallet and initiates a sell order. **Quick Dump** is useful for rapidly exiting positions across multiple wallets to minimize slippage. This button will only appear in **Multi-Wallet Mode**.

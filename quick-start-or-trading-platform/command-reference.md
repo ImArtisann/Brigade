@@ -1,155 +1,173 @@
----
-description: >-
-  Brigade offers a comprehensive set of commands to streamline and automate
-  various trading activities. This section provides detailed descriptions and
-  usage examples for each command.
----
-
 # 🖱️ Command Reference
 
-### **1. `/slip <amount>`**
+### Command Reference
 
-**Description:**\
-Sets the slippage tolerance for transactions. Slippage refers to the percentage difference between the expected price of a trade and the price at which the trade is actually executed.
+The Brigade trading bot provides a variety of commands to streamline trading operations and manage settings efficiently. Below is a detailed list of commands, required and optional parameters, and examples for each.
 
-**Usage:**\
-`/slip 0.5`\
-Sets the slippage tolerance to 0.5%.
+***
 
-### **2. `/priority <amount>`**
+#### 1. **/start**
 
-**Description:**\
-Sets a custom priority fee for transactions, which can help increase the likelihood of your transaction being confirmed during network congestion.
+* **Description**: Initializes Brigade and displays the welcome message. Use any command to view the help menu for that specific command.
+* **Usage**: `/start`
 
-**Usage:**\
-`/priority 0.00001`\
-Sets the transaction priority fee to 0.00001 SOL.
+***
 
-### **3. `/ap <medium|high|vhigh>`**
+#### 2. **/buy**
 
-**Description:**\
-Turns on auto priority for transactions, allowing the bot to automatically select a priority fee based on network conditions.
+* **Description**: Sends an auto buy order for a specified contract.
+* **Required**: `contract` (Token contract address)
+* **Optional**: `amount` (SOL amount for the purchase)
+* **Usage**: `/buy <contract> <amount>`
+* **Example**: `/buy Es9vMFrz... 0.5`
 
-**Usage:**\
-`/ap medium`\
-Activates auto priority with a medium fee setting.
+***
 
-### **4. `/gb <number>`**
+#### 3. **/sell**
 
-**Description:**\
-Generates new buy wallets. This command is particularly useful for users operating in Buy Wallet Mode.
+* **Description**: Sends an auto sell order for a specified contract.
+* **Required**: `contract` (Token contract address)
+* **Optional**: `amount` (Amount of tokens to sell, in percentage or absolute value)
+* **Usage**: `/sell <contract> <amount>`
+* **Example**: `/sell Es9vMFrz... 50` (Sells 50% of the token balance
 
-**Usage:**\
-`/gb 5`\
-Generates 5 new buy wallets. A confirmation prompt will appear, reminding users that old wallets cannot be recovered.
+***
 
-### **5. `/gf`**
+#### 4. **/random**
 
-**Description:**\
-Generates a new fund wallet. This command is used to replace the current fund wallet with a new one.
+* **Description**: Sends a buy order with a randomly selected SOL amount within a specified range.
+* **Required**: `contract` (Token contract address)
+* **Optional**: `random range` (SOL amount range, formatted as `min:max`)
+* **Usage**: `/random <contract> <min:max>`
+* **Example**: `/random Es9vMFrz... 0.1:0.5`
 
-**Usage:**\
-`/gf`\
-Generates a new fund wallet after confirming that the old wallet’s balance is empty.
+***
 
-### **6. `/sendsol <wallet> [<amount>]`**
+#### 5. **/auto**
 
-**Description:**\
-Transfers SOL from the fund wallet to another wallet. If no amount is specified, all SOL in the fund wallet is transferred.
+* **Description**: Opens the settings menu or wallet selector for automatic trades.
+* **Options**: `settings` or `wallets`
+* **Usage**: `/auto <option>`
+* **Example**: `/auto settings`
 
-**Usage:**\
-`/sendsol C1vQy...N2k7w`\
-Transfers all SOL from the fund wallet to the specified wallet.
+***
 
-`/sendsol C1vQy...N2k7w 0.5`\
-Transfers 0.5 SOL from the fund wallet to the specified wallet.
+#### 6. **/copy**
 
-### **7. `/ab <contract> [<amount>]`**
+* **Description**: Manages copy trading by adding/removing wallets or opening settings.
+* **Options**: `settings`, `wallets`, or `wallet`
+* **Usage**: `/copy <option>`
+* **Example**: `/copy wallet`
 
-**Description:**\
-Submits an auto buy using the default settings configured in the Auto Buy/Sell Settings Menu. If an amount is specified, it overrides the default amount.
+***
 
-**Usage:**\
-`/ab Es9vMFrz...`\
-Submits an auto buy using the contract address with the default SOL amount.
+#### 7. **/snipe**
 
-`/ab Es9vMFrz... 0.5`\
-Submits an auto buy with 0.5 SOL for the specified contract address.
+* **Description**: Manages snipe trading by adding/removing wallets or opening settings.
+* **Options**: `settings`, `wallets`, or `wallet`
+* **Usage**: `/snipe <option>`
+* **Example**: `/snipe wallets`
 
-### **8. `/as <contract> [<sell percentage>]`**
+***
 
-**Description:**\
-Submits an auto sell using the default settings configured in the Auto Buy/Sell Settings Menu. If a sell percentage is specified, it overrides the default percentage.
+#### 8. **/priority**
 
-**Usage:**\
-`/as Es9vMFrz...`\
-Submits an auto sell using the contract address with the default sell percentage.
+* **Description**: Sets the priority fee level for a specified trade mode.
+* **Required**: `priority number` (Numeric value for priority)
+* **Optional**: `mode` (Trade mode, default is `main`)
+* **Usage**: `/priority <priority number> <mode>`
+* **Example**: `/priority .001 snipe`
 
-`/as Es9vMFrz... 50`\
-Submits an auto sell for 50% of the token balance for the specified contract address.
+***
 
-### **9. `/ar <contract> [<random amount>]`**
+#### 9. **/autop**
 
-**Description:**\
-Submits an auto random buy based on the random amount range set in the Auto Buy/Sell Settings Menu. If a specific random amount is specified, it overrides the default range.
+* **Description**: Enables auto-priority with a specified priority level.
+* **Optional**: `priority level string` (e.g., `normal`, `turbo`, `lightening`)
+* **Optional**: `mode` (Trade mode, default is `main`)
+* **Usage**: `/autop <priority level> <mode>`
+* **Example**: `/autop turbo main`
 
-**Usage:**\
-`/ar Es9vMFrz...`\
-Submits an auto random buy using the default random amount range for the specified contract.
+***
 
-`/ar Es9vMFrz... 0.1:0.3`\
-Submits an auto random buy with an amount randomly chosen between 0.1 and 0.3 SOL for the specified contract.
+#### 10. **/amount**
 
-### **10. `/sf`**
+* **Description**: Sets the SOL amount to be used for a specified trade mode.
+* **Required**: `sol amount number`
+* **Optional**: `mode` (Trade mode, default is `main`)
+* **Usage**: `/amount <sol amount> <mode>`
+* **Example**: `/amount 0.5 copy`
 
-**Description:**\
-Quickly transfers all SOL from your buy wallets back to the fund wallet. This command is useful when users want to consolidate funds after trading.
+***
 
-**Usage:**\
-`/sf`\
-Transfers all SOL from buy wallets to the fund wallet.
+#### 11. **/buyslip**
 
-### **11. `/sb <amount>`**
+* **Description**: Sets the slippage tolerance for buy orders in a specified trade mode.
+* **Required**: `buy slip number` (Percentage)
+* **Optional**: `mode` (Trade mode, default is `main`)
+* **Usage**: `/buyslip <buy slip> <mode>`
+* **Example**: `/buyslip 5 snipe`
 
-**Description:**\
-Sends SOL from the fund wallet to all buy wallets, distributing the specified amount evenly.
+***
 
-**Usage:**\
-`/sb 0.5`\
-Distributes 0.5 SOL evenly among all buy wallets.
+#### 12. **/sellslip**
 
-### **12. `/ac <wallet>`**
+* **Description**: Sets the slippage tolerance for sell orders in a specified trade mode.
+* **Required**: `sell slip number` (Percentage)
+* **Optional**: `mode` (Trade mode, default is `main`)
+* **Usage**: `/sellslip <sell slip> <mode>`
+* **Example**: `/sellslip 3 snipe`
 
-**Description:**\
-Adds a wallet address to your copy trade list. This command is a quick alternative to adding wallets via the Copy Trade Menu.
+***
 
-**Usage:**\
-`/ac C1vQy...N2k7w`\
-Adds the specified wallet to the copy trade list.
+#### 13. **/genbuy**
 
-### **13. `/rc <wallet>`**
+* **Description**: Generates a specified number of new buy wallets for Multi-Wallet Mode.
+* **Required**: `number` (Number of buy wallets to generate)
+* **Usage**: `/genbuy <number>`
+* **Example**: `/genbuy 5`
 
-**Description:**\
-Removes a wallet address from your copy trade list.
+***
 
-**Usage:**\
-`/rc C1vQy...N2k7w`\
-Removes the specified wallet from the copy trade list.
+#### 14. **/genfund**
 
-### **14. `/sniper <wallet>`**
+* **Description**: Generates a new fund wallet, replacing the existing one.
+* **Usage**: `/genfund`
 
-**Description:**\
-Adds a wallet address to your sniper trade list, which is used to snipe new tokens created by the specified wallet.
+***
 
-**Usage:**\
-`/sniper C1vQy...N2k7w`\
-Adds the specified wallet to the sniper trade list.
+#### 15. **/fund**
 
-### **15. `/rsniper <wallet>`**
+* **Description**: Sends SOL from the main wallet to buy wallets.
+* **Required**: `sol amount` (Amount of SOL to distribute)
+* **Usage**: `/fund <sol amount>`
+* **Example**: `/fund 1.0`
 
-**Description:**\
-Removes a wallet address from your sniper trade list.
+***
 
-**Usage:**\
-`/rsniper C1vQy...N2k7w`\
-Removes the specified wallet from the sniper trade list.
+#### 16. **/extract**
+
+* **Description**: Empties all buy wallets, transferring SOL back to the fund wallet.
+* **Usage**: `/extract`
+
+***
+
+#### 17. **/send**
+
+* **Description**: Sends SOL to any specified wallet.
+* **Usage**: `/send <wallet address> <amount>`
+* **Example**: `/send C1vQy...N2k7w 0.5`
+
+***
+
+#### 18. **/mode**
+
+* **Description**: Toggles between **Quick Mode** (fast actions) and **Open Menu Mode** (detailed actions) for trading.
+* **Usage**: `/mode`
+
+***
+
+#### 19. **/help**
+
+* **Description**: Displays the help menu with detailed explanations of all available commands.
+* **Usage**: `/help`

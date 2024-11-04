@@ -21,7 +21,8 @@ layout:
 
 ## **Step 2: Select Trading Mode**
 
-* The bot starts with a main menu displaying options for **Fund Wallet Mode** or **Buy Wallet Mode**. Users can switch between these modes by clicking the `Click To Swap` hyper link-button next to the displayed trade mode.
+* The bot starts with a main menu displaying options for **Fund Wallet Mode** or **Buy Wallet Mode**. Users can switch between these modes by clicking the `Click Here` hyper link-button next to the displayed trade mode.
+* You can also swap between modes by using command /mode
 
 ## **Step 3: Fund Wallets**
 
